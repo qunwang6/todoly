@@ -117,7 +117,7 @@ function limaker(message, is_done) {
     strk.appendChild(document.createTextNode(message));
     li.appendChild(strk);
     var btn = document.createElement("span");
-    // btn.textContent = "❌";
+    btn.textContent = "";
     btn.setAttribute("id", "btn-x");
     li.appendChild(btn);
     todoContainer.appendChild(li);
@@ -126,7 +126,7 @@ function limaker(message, is_done) {
   } else {
     li.appendChild(document.createTextNode(message));
     btn = document.createElement("span");
-    btn.textContent = "❌";
+    btn.textContent = "";
     btn.setAttribute("id", "btn-x");
     var btnchk = document.createElement("span");
     btnchk.textContent = "✔️";
@@ -176,7 +176,7 @@ function markDone(e) {
     li.appendChild(strk);
 
     var btn = document.createElement("span");
-    btn.textContent = "❌";
+    btn.textContent = "";
     btn.setAttribute("id", "btn-x");
     li.appendChild(btn);
     // mark is_done = true
