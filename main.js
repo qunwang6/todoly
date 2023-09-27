@@ -117,7 +117,7 @@ function limaker(message, is_done) {
     strk.appendChild(document.createTextNode(message));
     li.appendChild(strk);
     var btn = document.createElement("span");
-    btn.textContent = "❌";
+    // btn.textContent = "❌";
     btn.setAttribute("id", "btn-x");
     li.appendChild(btn);
     todoContainer.appendChild(li);
