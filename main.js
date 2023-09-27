@@ -117,21 +117,21 @@ function limaker(message, is_done) {
     strk.appendChild(document.createTextNode(message));
     li.appendChild(strk);
     var btn = document.createElement("span");
-    btn.textContent = "";
+    btn.textContent = "❌";
     btn.setAttribute("id", "btn-x");
-    li.appendChild(btn);
+    // li.appendChild(btn);
     todoContainer.appendChild(li);
     // clear msg-input
     msg.value = "";
   } else {
     li.appendChild(document.createTextNode(message));
     btn = document.createElement("span");
-    btn.textContent = "";
+    btn.textContent = "❌";
     btn.setAttribute("id", "btn-x");
     var btnchk = document.createElement("span");
     btnchk.textContent = "✔️";
     btnchk.setAttribute("id", "btn-c");
-    li.appendChild(btn);
+    // li.appendChild(btn);
     li.appendChild(btnchk);
 
     todoContainer.appendChild(li);
@@ -176,9 +176,9 @@ function markDone(e) {
     li.appendChild(strk);
 
     var btn = document.createElement("span");
-    btn.textContent = "";
+    btn.textContent = "❌";
     btn.setAttribute("id", "btn-x");
-    li.appendChild(btn);
+    // li.appendChild(btn);
     // mark is_done = true
     toDos.forEach(function (toDo, index) {
       if (toDo.msg === msg1) {
